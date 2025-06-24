@@ -16,7 +16,7 @@ const Contact = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/v1/message/send",
+        "https://portfolio-aq-25d3.up.railway.app/api/v1/message/send",
         { senderName, subject, message },
         {
           withCredentials: true,

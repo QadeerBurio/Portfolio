@@ -49,7 +49,7 @@ const UpdateProject = () => {
   useEffect(() => {
     const getProject = async () => {
       await axios
-        .get(`https://mern-stack-portfolio-backend-code.onrender.com/api/v1/project/get/${id}`, {
+        .get(`https://portfolio-aq-25d3.up.railway.app/api/v1/project/get/${id}`, {
           withCredentials: true,
         })
         .then((res) => {

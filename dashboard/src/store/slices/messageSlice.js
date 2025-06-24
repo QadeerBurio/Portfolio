@@ -57,7 +57,7 @@ export const getAllMessages = () => async (dispatch) => {
   dispatch(messageSlice.actions.getAllMessagesRequest());
   try {
     const response = await axios.get(
-      "http://localhost:3000/api/v1/message/getall",
+      "https://portfolio-aq-25d3.up.railway.app/api/v1/message/getall",
       { withCredentials: true }
     );
     dispatch(
@@ -75,7 +75,7 @@ export const deleteMessage = (id) => async (dispatch) => {
   dispatch(messageSlice.actions.deleteMessageRequest());
   try {
     const response = await axios.delete(
-      `http://localhost:3000/api/v1/message/delete/${id}`,
+      `https://portfolio-aq-25d3.up.railway.app/api/v1/message/delete/${id}`,
       {
         withCredentials: true,
       }

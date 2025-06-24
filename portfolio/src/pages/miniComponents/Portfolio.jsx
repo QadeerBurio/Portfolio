@@ -11,7 +11,7 @@ const Portfolio = () => {
     const getMyProjects = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:3000/api/v1/project/getall",
+          "https://portfolio-aq-25d3.up.railway.app/api/v1/project/getall",
           { withCredentials: true }
         );
         setProjects(data.projects);

@@ -20,7 +20,7 @@ const Hero = () => {
     const getMyProfile = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:3000/api/v1/user/portfolio/me",
+          "https://portfolio-aq-25d3.up.railway.app/api/v1/user/portfolio/me",
           { withCredentials: true }
         );
         setUser(data.user);
